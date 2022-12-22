@@ -15,6 +15,13 @@ export type ToastAction = {
     removeAfterClick?: boolean;
 };
 
+export interface ToastLifecycleArgs {
+    element: HTMLDivElement;
+    props: ToastProps;
+}
+
+export type ToastLifecycleCallback = (args: ToastLifecycleArgs) => void;
+
 export type ToastProps = {
     name: string;
     title?: string;
@@ -25,6 +32,12 @@ export type ToastProps = {
     isClosable?: boolean;
     isOverride?: boolean;
     actions?: ToastAction[];
+
+    /** Callback. Fired when corresponding toast component mount */
+    onMount?: ToastLifecycleCallback;
+
+    /** Callback. Fired when corresponding toast component unmount */
+    onUnmount?: ToastLifecycleCallback;
 };
 
 export type InternalToastProps = ToastProps & {

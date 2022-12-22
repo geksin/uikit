@@ -4,7 +4,7 @@ import {useCloseOnTimeout} from '../../utils/useCloseOnTimeout';
 import {Icon, IconProps} from '../../Icon';
 import {Button} from '../../Button';
 import {Alarm, CrossIcon, Info, Success} from '../../icons';
-import type {ToastAction, ToastProps, ToastType} from '../types';
+import type {ToastAction, ToastLifecycleCallback, ToastProps, ToastType} from '../types';
 import i18n from '../i18n';
 
 import './Toast.scss';
@@ -176,6 +176,8 @@ export function Toast(props: ToastUnitedProps) {
         title,
         className,
         type,
+        onMount,
+        onUnmount,
         autoHiding: timeoutProp = DEFAULT_TIMEOUT,
         isClosable = true,
         isOverride = false,
@@ -201,6 +203,19 @@ export function Toast(props: ToastUnitedProps) {
         created: status !== ToastStatus.Creating,
         [type || 'default']: true,
     };
+
+    const onUnmountRef = React.useRef<ToastLifecycleCallback>();
+    onUnmountRef.current = onUnmount;
+    React.useEffect(() => {
+        if (onMount && heightProps.ref.current) {
+            onMount({props, element: heightProps.ref.current});
+        }
+        return () => {
+            if (onUnmountRef.current && heightProps.ref.current) {
+                onUnmountRef.current({props, element: heightProps.ref.current});
+            }
+        };
+    }, []);
 
     return (
         <div
