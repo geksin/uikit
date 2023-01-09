@@ -1,11 +1,11 @@
 import React from 'react';
 import {block} from '../../utils/cn';
 
-import {SocialShareData} from '../models';
-import {LayoutDirection, ShareOptions} from '../constants';
+import type {SocialShareData} from '../models';
+import type {LayoutDirection, ShareOptions} from '../constants';
 import {ShareListItem} from '../ShareListItem/ShareListItem';
 import {Icon} from '../../Icon';
-import {SVGIconData} from '../../Icon/types';
+import type {SVGIconData} from '../../Icon/types';
 import {Button} from '../../Button';
 import {Link} from '../../icons';
 import {CopyToClipboard, CopyToClipboardStatus} from '../../CopyToClipboard';

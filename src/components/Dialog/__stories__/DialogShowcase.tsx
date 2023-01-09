@@ -76,7 +76,7 @@ const OtherDialog = () => {
                     showError={errorVisible}
                     listenKeyEnter
                     renderButtons={(buttonApply, buttonCancel) => (
-                        <>
+                        <React.Fragment>
                             {buttonCancel}
                             <div style={{marginLeft: 10}}>
                                 <Button view="flat" size="l" width="max" onClick={switchVisibility}>
@@ -84,7 +84,7 @@ const OtherDialog = () => {
                                 </Button>
                             </div>
                             {buttonApply}
-                        </>
+                        </React.Fragment>
                     )}
                 />
             </Dialog>

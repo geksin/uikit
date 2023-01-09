@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {block} from '../utils/cn';
 import _sumBy from 'lodash/sumBy';
 
@@ -57,7 +57,7 @@ interface ProgressWithStack extends ProgressGeneralProps, Partial<ProgressDefaul
 
 export type ProgressProps = ProgressWithStack | ProgressWithValue;
 
-export class Progress extends Component<ProgressProps> {
+export class Progress extends React.Component<ProgressProps> {
     static defaultProps: ProgressDefaultProps = {
         text: '',
         theme: 'default',

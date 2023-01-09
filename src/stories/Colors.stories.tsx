@@ -1,5 +1,5 @@
 import React from 'react';
-import {Meta, Story} from '@storybook/react';
+import type {Meta, Story} from '@storybook/react';
 import {RenderTexts} from '../demo/colors/Texts';
 import {RenderBackgrounds} from '../demo/colors/Base';
 import {RenderLines} from '../demo/colors/Lines';

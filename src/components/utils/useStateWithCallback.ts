@@ -1,12 +1,12 @@
-import {useCallback, useState} from 'react';
+import React from 'react';
 
 export function useStateWithCallback<T>(
     initialValue: T,
     callback?: VoidFunction,
 ): [T, (nextValue: T | ((prevValue: T) => T)) => void] {
-    const [state, setState] = useState(initialValue);
+    const [state, setState] = React.useState(initialValue);
 
-    const setWithCallback = useCallback(
+    const setWithCallback = React.useCallback(
         (nextValue: T | ((value: T) => T)) => {
             callback?.();
             setState(nextValue);

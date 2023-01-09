@@ -9,7 +9,7 @@ import {TableColumnSetup} from './TableColumnSetup/TableColumnSetup';
 import {Icon} from '../../../Icon';
 import {GearIcon} from '../../../icons/GearIcon';
 import {Button} from '../../../Button';
-import {TableColumnConfig, TableDataItem, TableProps} from '../../Table';
+import type {TableColumnConfig, TableDataItem, TableProps} from '../../Table';
 import {enhanceSystemColumn, actionsColumnId} from '../withTableActions/withTableActions';
 import {selectionColumnId} from '../withTableSelection/withTableSelection';
 

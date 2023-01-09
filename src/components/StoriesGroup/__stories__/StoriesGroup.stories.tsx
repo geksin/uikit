@@ -1,9 +1,9 @@
 import React from 'react';
-import {Meta, Story} from '@storybook/react/types-6-0';
+import type {Meta, Story} from '@storybook/react/types-6-0';
 
 import {Button} from '../../Button';
 import {StoriesGroup, StoriesGroupProps} from '../../StoriesGroup/StoriesGroup';
-import {StoriesGroupItem} from '../types';
+import type {StoriesGroupItem} from '../types';
 
 export default {
     title: 'Components/StoriesGroup',

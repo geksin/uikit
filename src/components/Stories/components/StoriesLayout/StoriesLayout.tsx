@@ -6,7 +6,7 @@ import {Link} from '../../../Link';
 import {MediaRenderer} from '..';
 import i18n from '../../i18n';
 
-import {StoriesItem} from '../../types';
+import type {StoriesItem} from '../../types';
 
 import {block} from '../../../utils/cn';
 import './StoriesLayout.scss';

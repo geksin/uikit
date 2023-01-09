@@ -1,4 +1,4 @@
-import React, {ReactNode} from 'react';
+import React from 'react';
 import {block} from '../utils/cn';
 import {CopyToClipboard, CopyToClipboardStatus} from '../CopyToClipboard';
 import {ClipboardIcon} from '../ClipboardIcon';
@@ -95,7 +95,7 @@ export const Label = React.forwardRef<HTMLDivElement, LabelProps>(function Label
     const content = hasContent && <div className={b('text')}>{children}</div>;
 
     const renderLabel = (status?: CopyToClipboardStatus) => {
-        let actionButton: ReactNode;
+        let actionButton: React.ReactNode;
 
         if (typeCopy) {
             actionButton = (

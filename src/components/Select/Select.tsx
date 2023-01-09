@@ -1,7 +1,7 @@
 import React from 'react';
 import {useForkRef} from '../utils/useForkRef';
 import {useSelect} from '../utils/useSelect';
-import {List} from '../List';
+import type {List} from '../List';
 import {KeyCode} from '../constants';
 import {reducer, initialState} from './store';
 import type {SelectProps} from './types';

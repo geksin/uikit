@@ -1,5 +1,4 @@
-import React from 'react';
-import {MenuItemProps} from '../Menu';
+import type {MenuItemProps} from '../Menu';
 
 export type DropdownMenuItemAction<T> = (
     event: React.MouseEvent<HTMLElement, MouseEvent>,

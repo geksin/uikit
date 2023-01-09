@@ -1,6 +1,6 @@
 import React from 'react';
 import {block} from '../utils/cn';
-import {DOMProps, ControlProps, QAProps} from '../types';
+import type {DOMProps, ControlProps, QAProps} from '../types';
 import {useCheckbox} from '../utils/useCheckbox';
 
 import './Switch.scss';

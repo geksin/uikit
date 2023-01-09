@@ -1,6 +1,6 @@
 import React from 'react';
 import block from 'bem-cn-lite';
-import {Meta, Story} from '@storybook/react';
+import type {Meta, Story} from '@storybook/react';
 import {DropdownMenu, DropdownMenuItem} from '../DropdownMenu';
 import {Label, LabelProps} from '../../Label';
 import {Icon} from '../../Icon';

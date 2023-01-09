@@ -6,7 +6,7 @@ import {Button} from '../../../Button';
 import {Icon} from '../../../Icon';
 import {PlayIcon} from '../../../icons/PlayIcon';
 import {Picture} from '../Picture/Picture';
-import {ChangelogItem, ChangelogStoryClickHandler} from '../../types';
+import type {ChangelogItem, ChangelogStoryClickHandler} from '../../types';
 import i18n from '../../i18n';
 
 import './Item.scss';

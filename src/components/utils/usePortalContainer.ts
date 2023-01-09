@@ -1,7 +1,7 @@
-import {useContext} from 'react';
+import React from 'react';
 import {PortalContext} from './PortalProvider';
 
 export function usePortalContainer(): HTMLElement {
-    const context = useContext(PortalContext);
+    const context = React.useContext(PortalContext);
     return context.current ?? document.body;
 }

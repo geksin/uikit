@@ -1,4 +1,4 @@
-import React, {useMemo} from 'react';
+import React from 'react';
 import {block} from '../utils/cn';
 import {Label, LabelProps} from '../Label';
 
@@ -42,7 +42,7 @@ export const TabsItem: React.FC<TabsItemProps> = ({
         }
     };
 
-    const htmlTitle = useMemo(() => {
+    const htmlTitle = React.useMemo(() => {
         if (hint !== undefined) {
             return hint;
         }

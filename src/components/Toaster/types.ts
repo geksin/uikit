@@ -1,5 +1,4 @@
-import React from 'react';
-import {ButtonView} from '../Button';
+import type {ButtonView} from '../Button';
 
 export type ToasterArgs = {
     // FIXME: BREAKING CHANGE. Remove in the next major

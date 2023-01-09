@@ -1,6 +1,6 @@
-import React, {useMemo} from 'react';
+import React from 'react';
 import {block} from '../utils/cn';
-import {QAProps} from '../types';
+import type {QAProps} from '../types';
 import {TabsItem, TabsItemProps as TabsItemInternalProps} from './TabsItem';
 import './Tabs.scss';
 
@@ -49,7 +49,7 @@ export const Tabs: React.FC<TabsProps> = ({
     wrapTo,
     qa,
 }) => {
-    const activeTabId = useMemo(() => {
+    const activeTabId = React.useMemo(() => {
         if (activeTab) {
             return activeTab;
         }

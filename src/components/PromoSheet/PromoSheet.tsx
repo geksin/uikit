@@ -1,5 +1,4 @@
-import type {FC} from 'react';
-import React, {useState, useCallback, useEffect, useMemo} from 'react';
+import React from 'react';
 import {block} from '../utils/cn';
 import {CrossIcon} from '../icons/CrossIcon';
 import type {ButtonProps, SheetProps} from '../';
@@ -29,7 +28,7 @@ type ImageSizes = {
     height?: number;
 };
 
-export const PromoSheet: FC<PromoSheetProps> = ({
+export const PromoSheet: React.FC<PromoSheetProps> = ({
     title,
     message,
     actionText,
@@ -43,11 +42,11 @@ export const PromoSheet: FC<PromoSheetProps> = ({
     onActionClick,
     onClose,
 }) => {
-    const [visible, setVisible] = useState(true);
-    const [loaded, setLoaded] = useState(!imageSrc);
-    const [imageSizes, setImageSizes] = useState<ImageSizes | undefined>();
+    const [visible, setVisible] = React.useState(true);
+    const [loaded, setLoaded] = React.useState(!imageSrc);
+    const [imageSizes, setImageSizes] = React.useState<ImageSizes | undefined>();
 
-    const handleActionClick = useCallback<NonNullable<PromoSheetProps['onActionClick']>>(
+    const handleActionClick = React.useCallback<NonNullable<PromoSheetProps['onActionClick']>>(
         (event) => {
             setVisible(false);
             onActionClick?.(event);
@@ -55,18 +54,18 @@ export const PromoSheet: FC<PromoSheetProps> = ({
         [onActionClick],
     );
 
-    const handleCloseClick = useCallback<NonNullable<PromoSheetProps['onClose']>>(() => {
+    const handleCloseClick = React.useCallback<NonNullable<PromoSheetProps['onClose']>>(() => {
         setVisible(false);
     }, []);
 
-    const closeButtonExtraProps = useMemo(
+    const closeButtonExtraProps = React.useMemo(
         () => ({
             'aria-label': closeText,
         }),
         [closeText],
     );
 
-    useEffect(() => {
+    React.useEffect(() => {
         if (!imageSrc) {
             setLoaded(true);
 

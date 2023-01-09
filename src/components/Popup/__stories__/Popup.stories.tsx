@@ -1,5 +1,5 @@
 import React from 'react';
-import {Meta, Story} from '@storybook/react';
+import type {Meta, Story} from '@storybook/react';
 import {Button} from '../../Button';
 import {Popup, PopupProps, PopupPlacement} from '../Popup';
 import {TextInput} from '../../TextInput';

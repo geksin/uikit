@@ -1,4 +1,4 @@
-import {ThemeType} from './types';
+import type {ThemeType} from './types';
 import {getThemeType} from './getThemeType';
 import {useThemeValue} from './useThemeValue';
 

@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 import block from 'bem-cn-lite';
-import {Story} from '@storybook/react';
+import type {Story} from '@storybook/react';
 import {Button, Menu} from '../../../';
 import {Sheet, SheetProps} from '../../Sheet';
 
@@ -9,7 +9,7 @@ import './WithMenuShowcase.scss';
 const b = block('sheet-stories-with-menu-showcase');
 
 export const WithMenuShowcase: Story<SheetProps> = (args: SheetProps) => {
-    const [visible, setVisible] = useState(false);
+    const [visible, setVisible] = React.useState(false);
 
     return (
         <div className={b()}>

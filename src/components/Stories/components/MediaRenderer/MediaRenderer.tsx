@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {StoriesItemMedia} from '../../types';
+import type {StoriesItemMedia} from '../../types';
 import {ImageView, VideoView} from '../../components';
 
 export interface MediaRendererProps {

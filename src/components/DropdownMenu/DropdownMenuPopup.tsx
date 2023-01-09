@@ -1,4 +1,4 @@
-import React, {ReactNode, RefObject, useMemo} from 'react';
+import React from 'react';
 import {block} from '../utils/cn';
 import {Popup, PopupPlacement} from '../Popup';
 import {Menu, MenuProps} from '../Menu';
@@ -12,13 +12,13 @@ const SEPARATOR: DropdownMenuItem = {text: '', action: () => {}};
 export type DropdownMenuPopupProps<T> = {
     items: (DropdownMenuItem<T> | DropdownMenuItem<T>[])[];
     open: boolean;
-    anchorRef?: RefObject<HTMLDivElement>;
+    anchorRef?: React.RefObject<HTMLDivElement>;
     onClose: () => void;
     popupClassName?: string;
     placement?: PopupPlacement;
     size?: DropdownMenuSize;
     menuProps?: MenuProps;
-    children?: ReactNode;
+    children?: React.ReactNode;
 };
 
 export const DropdownMenuPopup = <T,>({
@@ -32,7 +32,7 @@ export const DropdownMenuPopup = <T,>({
     menuProps,
     children,
 }: DropdownMenuPopupProps<T>) => {
-    const content = useMemo(() => {
+    const content = React.useMemo(() => {
         return (
             children || (
                 <Menu className={b('menu')} size={size} {...menuProps}>

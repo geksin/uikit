@@ -1,5 +1,5 @@
 import React from 'react';
-import {Meta, Story} from '@storybook/react';
+import type {Meta, Story} from '@storybook/react';
 import {Menu, MenuProps} from '../Menu';
 import {Icon} from '../../Icon';
 import {GearIcon} from '../../icons/GearIcon';

@@ -1,5 +1,5 @@
-import React, {cloneElement} from 'react';
-import {DOMProps, QAProps} from '../types';
+import React from 'react';
+import type {DOMProps, QAProps} from '../types';
 import {block} from '../utils/cn';
 import {isOfType} from '../utils/isOfType';
 import {eventBroker} from '../utils/event-broker';
@@ -219,7 +219,7 @@ function prepareChildren(children: React.ReactNode) {
                             </Button.Icon>
                         );
                     } else {
-                        leftIcon = cloneElement(item, {
+                        leftIcon = React.cloneElement(item, {
                             side,
                         });
                     }
@@ -233,7 +233,7 @@ function prepareChildren(children: React.ReactNode) {
                             </Button.Icon>
                         );
                     } else {
-                        rightIcon = cloneElement(item, {
+                        rightIcon = React.cloneElement(item, {
                             side,
                         });
                     }

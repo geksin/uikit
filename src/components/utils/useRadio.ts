@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {ControlProps} from '../types';
+import type {ControlProps} from '../types';
 import {useUniqId} from './useUniqId';
 import {useForkRef} from './useForkRef';
 import {eventBroker} from './event-broker';

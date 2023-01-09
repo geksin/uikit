@@ -6,7 +6,13 @@ import {InputControl} from './InputControl/InputControl';
 import {Button} from '../Button';
 import {Icon} from '../Icon';
 import {CrossIcon} from '../icons/CrossIcon';
-import {TextInputProps, TextInputView, TextInputSize, TextInputPin, TextInputState} from './types';
+import type {
+    TextInputProps,
+    TextInputView,
+    TextInputSize,
+    TextInputPin,
+    TextInputState,
+} from './types';
 import i18n from './i18n';
 
 import './TextInput.scss';

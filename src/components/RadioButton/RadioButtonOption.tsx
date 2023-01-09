@@ -1,6 +1,6 @@
 import React from 'react';
 import {block} from '../utils/cn';
-import {ControlProps} from '../types';
+import type {ControlProps} from '../types';
 import {isIcon} from '../utils/common';
 import {useRadio} from '../utils/useRadio';
 

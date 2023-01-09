@@ -3,7 +3,7 @@ import {CSSTransition} from 'react-transition-group';
 
 import {block} from '../utils/cn';
 import {getCSSTransitionClassNames} from '../utils/transition';
-import {DOMProps, QAProps} from '../types';
+import type {DOMProps, QAProps} from '../types';
 import {Portal} from '../Portal';
 import {useBodyScrollLock} from '../utils/useBodyScrollLock';
 // import {useFocusTrap} from '../utils//useFocusTrap';

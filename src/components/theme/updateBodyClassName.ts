@@ -1,5 +1,5 @@
 import {block, modsClassName} from '../utils/cn';
-import {RealTheme} from './types';
+import type {RealTheme} from './types';
 
 const b = block('root');
 const rootClassName = b();

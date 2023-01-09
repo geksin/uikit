@@ -1,5 +1,5 @@
 import React from 'react';
-import {Meta, Story} from '@storybook/react';
+import type {Meta, Story} from '@storybook/react';
 import {StoreBadge, StoreBadgeProps} from '../StoreBadge';
 import {Platform} from '../../mobile/constants';
 

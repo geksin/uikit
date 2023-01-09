@@ -1,4 +1,3 @@
-import type {ReactNode} from 'react';
 import type {TextInputSize} from '../TextInput';
 
 export type ListSortHandleAlign = 'left' | 'right';
@@ -26,7 +25,11 @@ export type ListProps<T = unknown> = {
     deactivateOnLeave?: boolean;
     sortHandleAlign?: ListSortHandleAlign;
     size?: TextInputSize;
-    renderItem?: (item: ListItemData<T>, isItemActive: boolean, itemIndex: number) => ReactNode;
+    renderItem?: (
+        item: ListItemData<T>,
+        isItemActive: boolean,
+        itemIndex: number,
+    ) => React.ReactNode;
     filterItem?: (filter: string) => (item: ListItemData<T>) => boolean;
     onItemClick?: (item: ListItemData<T>, index: number, fromKeyboard?: boolean) => void;
     onFilterUpdate?: (filter: string) => void;

@@ -8,8 +8,8 @@ import {Button} from '../../../../Button';
 import {GearIcon} from '../../../../icons/GearIcon';
 import {TickIcon} from './TickIcon';
 import {LockIcon} from './LockIcon';
-import {TableColumnSetupItem} from '../withTableSettings';
-import {PopperPlacement} from '../../../../../components/utils/usePopper';
+import type {TableColumnSetupItem} from '../withTableSettings';
+import type {PopperPlacement} from '../../../../../components/utils/usePopper';
 import i18n from './i18n';
 
 import './TableColumnSetup.scss';

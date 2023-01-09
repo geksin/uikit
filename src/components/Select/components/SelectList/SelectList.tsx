@@ -1,6 +1,6 @@
 import React from 'react';
 import {List} from '../../../List';
-import {SelectProps} from '../../types';
+import type {SelectProps} from '../../types';
 import {FlattenOption, getPopupItemHeight} from '../../utils';
 import {selectListBlock, SelectQa} from '../../constants';
 import {GroupLabel} from './GroupLabel';

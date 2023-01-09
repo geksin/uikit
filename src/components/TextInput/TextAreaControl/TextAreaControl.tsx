@@ -1,5 +1,5 @@
 import React from 'react';
-import {TextInputProps} from '../types';
+import type {TextInputProps} from '../types';
 import {block} from '../../utils/cn';
 import {useForkRef} from '../../utils/useForkRef';
 

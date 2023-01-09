@@ -2,7 +2,7 @@ import React from 'react';
 import block from 'bem-cn-lite';
 import {Checkbox} from '../../Checkbox';
 import {TextInput} from '../TextInput';
-import {TextInputProps} from '../types';
+import type {TextInputProps} from '../types';
 import './TextInputShowcase.scss';
 
 const b = block('text-input-showcase');

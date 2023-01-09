@@ -1,5 +1,5 @@
 import React from 'react';
-import {Story} from '@storybook/react';
+import type {Story} from '@storybook/react';
 import _cloneDeep from 'lodash/cloneDeep';
 import {Table, TableProps} from '../Table';
 import {columns as defaultColumns} from './utils';

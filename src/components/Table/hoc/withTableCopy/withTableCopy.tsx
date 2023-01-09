@@ -106,7 +106,7 @@ export function withTableCopy<I extends TableDataItem, E extends {} = {}>(
                             `.${buttonClassName}, .${buttonClassName} *`,
                         )
                     ) {
-                        return;
+                        return undefined;
                     }
 
                     return onRowClick(item, index, event);

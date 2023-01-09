@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {Meta, Story} from '@storybook/react';
+import React from 'react';
+import type {Meta, Story} from '@storybook/react';
 import {Tabs, TabsItemProps, TabsProps} from '../Tabs';
 import {GearIcon} from '../../icons/GearIcon';
 
@@ -33,7 +33,7 @@ const gearIcon = <GearIcon width={20} height={20} />;
 const Template: Story<
     TabsProps & {withIcon?: boolean; withCounter?: boolean; withLabel?: boolean}
 > = (args) => {
-    const [activeTab, setActiveTab] = useState('active');
+    const [activeTab, setActiveTab] = React.useState('active');
 
     const items: TabsProps['items'] = React.useMemo(
         () => [

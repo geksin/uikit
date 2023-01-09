@@ -5,6 +5,19 @@
         "node": true,
         "jest": true
     },
+    "rules": {
+        "no-restricted-syntax": [
+            "error",
+            {
+                "selector": "ImportDeclaration[source.value='react'] :matches(ImportNamespaceSpecifier, ImportSpecifier)",
+                "message": "Please use import React from 'react' instead."
+            },
+            {
+                "selector": "JSXFragment>JSXOpeningFragment:not(:has(JSXIdentifier))",
+                "message": "Please use React.Fragment instead."
+            }
+        ]
+    },
     "overrides": [
         {
             "files": ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],

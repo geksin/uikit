@@ -1,12 +1,12 @@
-import React, {PropsWithChildren} from 'react';
+import React from 'react';
 import {ToasterContext} from './ToasterContext';
-import {InternalToastProps, ToasterPublicMethods, ToastProps} from '../types';
+import type {InternalToastProps, ToasterPublicMethods, ToastProps} from '../types';
 import {hasToast} from '../utilities/hasToast';
 import {removeToast} from '../utilities/removeToast';
 import {getToastIndex} from '../utilities/getToastIndex';
 import {ToastsContext} from './ToastsContext';
 
-type Props = PropsWithChildren<{}>;
+type Props = React.PropsWithChildren<{}>;
 
 export const ToasterProvider = React.forwardRef<ToasterPublicMethods, Props>(
     function ToasterProvider({children}: Props, ref) {

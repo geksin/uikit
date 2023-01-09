@@ -1,5 +1,5 @@
 import {i18n} from '../../i18n';
-import {Lang} from './configure';
+import type {Lang} from './configure';
 
 type KeysData = Parameters<typeof i18n.registerKeyset>[2];
 

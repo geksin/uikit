@@ -1,6 +1,6 @@
 import React from 'react';
 import {block} from '../utils/cn';
-import {ControlProps, DOMProps, QAProps} from '../types';
+import type {ControlProps, DOMProps, QAProps} from '../types';
 import {useCheckbox} from '../utils/useCheckbox';
 import {CheckboxTickIcon} from './CheckboxTickIcon';
 import {CheckboxDashIcon} from './CheckboxDashIcon';

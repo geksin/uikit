@@ -7,7 +7,7 @@ import {DialogHeader} from './DialogHeader/DialogHeader';
 import {DialogBody} from './DialogBody/DialogBody';
 import {DialogDivider} from './DialogDivider/DialogDivider';
 import {ButtonClose} from './ButtonClose/ButtonClose';
-import {QAProps} from '../types';
+import type {QAProps} from '../types';
 
 import './Dialog.scss';
 

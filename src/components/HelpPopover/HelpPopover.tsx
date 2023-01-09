@@ -4,7 +4,7 @@ import {block} from '../utils/cn';
 import {Popover, PopoverProps} from '../Popover';
 import {Icon} from '../Icon';
 import {QuestionMarkIcon} from '../icons/QuestionMarkIcon';
-import {QAProps} from '../types';
+import type {QAProps} from '../types';
 
 import './HelpPopover.scss';
 

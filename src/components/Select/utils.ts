@@ -1,9 +1,9 @@
 import React from 'react';
-import {PopupPlacement} from '../Popup';
-import {List, ListItemData} from '../List';
+import type {PopupPlacement} from '../Popup';
+import type {List, ListItemData} from '../List';
 import {KeyCode} from '../constants';
-import {SelectProps, SelectOption, SelectOptionGroup} from './types';
-import {Option, OptionGroup} from './tech-components';
+import type {SelectProps, SelectOption, SelectOptionGroup} from './types';
+import type {Option, OptionGroup} from './tech-components';
 import {
     BORDER_WIDTH,
     CONTAINER_VERTICAL_MARGIN,

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Meta, Story} from '@storybook/react';
+import type {Meta, Story} from '@storybook/react';
 import {Table, TableProps} from '../Table';
 import _cloneDeep from 'lodash/cloneDeep';
 import {
@@ -12,7 +12,7 @@ import {
     TableWithSorting,
     DataItem,
 } from './utils';
-import {TableAction, TableSettingsData} from '..';
+import type {TableAction, TableSettingsData} from '..';
 import {action} from '@storybook/addon-actions';
 
 export default {

@@ -1,5 +1,5 @@
 import React from 'react';
-import {InternalToastProps} from '../types';
+import type {InternalToastProps} from '../types';
 import {Toast} from '../Toast/Toast';
 
 import './ToastList.scss';

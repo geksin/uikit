@@ -7,7 +7,7 @@ import {Button} from '../../../Button';
 import {Popup} from '../../../Popup';
 import {Menu, MenuItemProps} from '../../../Menu';
 import {DotsIcon} from '../../../icons/DotsIcon';
-import {TableDataItem, TableProps, TableColumnConfig} from '../../Table';
+import type {TableDataItem, TableProps, TableColumnConfig} from '../../Table';
 import './withTableActions.scss';
 
 export const actionsColumnId = '_actions';
@@ -237,7 +237,7 @@ export function withTableActions<I extends TableDataItem, E extends {} = {}>(
                             `.${BUTTON_CLASSNAME}, .${BUTTON_CLASSNAME} *`,
                         )
                     ) {
-                        return;
+                        return undefined;
                     }
 
                     return onRowClick(item, index, event);

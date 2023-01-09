@@ -1,5 +1,5 @@
 import React from 'react';
-import {Meta, Story} from '@storybook/react';
+import type {Meta, Story} from '@storybook/react';
 import {Label, LabelProps} from '../Label';
 import {Link} from '../../Link';
 import {Icon as IconComponent} from '../../Icon';

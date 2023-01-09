@@ -8,7 +8,7 @@ import {ShareTooltip, ShareOptions, ShareList} from '../../../ShareTooltip';
 
 import {LayoutDirection} from '../../constants';
 import {Custom, Cloud, ShareArrowUp} from './icons';
-import {SocialShareData} from 'src/components/ShareTooltip/models';
+import type {SocialShareData} from 'src/components/ShareTooltip/models';
 
 import './ShareTooltip.scss';
 

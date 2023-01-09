@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {Modal, ModalCloseReason} from '../Modal';
-import {StoriesItem} from './types';
+import type {StoriesItem} from './types';
 
 import {IndexType, StoriesLayout} from './components/StoriesLayout/StoriesLayout';
 

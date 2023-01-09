@@ -1,6 +1,6 @@
 import React from 'react';
 import {block} from '../utils/cn';
-import {DOMProps, QAProps} from '../types';
+import type {DOMProps, QAProps} from '../types';
 import {withEventBrokerDomHandlers} from '../utils/withEventBrokerDomHandlers';
 
 const b = block('menu');
